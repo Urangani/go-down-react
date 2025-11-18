@@ -24,7 +24,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="bg-linear-to-b from-green-10 to-white-100 py-20 px-6 md:px-12 lg:px-24">
+    <section className="bg-linear-to-b from-gray-200 via-green-200 to-white py-20 px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left Text Section */}
         <div className={`who-we-are-text ${isInView ? 'in-view' : ''}`} ref={aboutRef}>

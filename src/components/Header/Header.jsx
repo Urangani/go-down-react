@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Nav from './Nav';
 import MobileMenu from './MobileMenu';
+import goDownLogo from '../../assets/images/godown(logo).png';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,13 +12,13 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+    <header className="sticky top-0 z-50 bg-linear-to-b from-white via-white to-green-200/25 backdrop-blur-sm shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-15">
           {/* Logo */}
           <Link to="/home" className="flex items-center">
             <div className="flex items-center h-16">
-              <img src="src/assets/images/godown(logo).png" alt="The Go Down Herbs Logo" className="h-full w-auto object-contain" />
+              <img src={goDownLogo} alt="The Go Down Herbs Logo" className="h-[80%] w-auto object-contain" />
             </div>
           </Link>
 
