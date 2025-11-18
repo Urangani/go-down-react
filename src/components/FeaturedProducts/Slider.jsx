@@ -19,7 +19,7 @@ function Slider() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-linear-to-t from-green-200 to-white py-10">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-linear-to-t from-white via-green-200 to-white py-10">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-green-600 tracking-tight text-center drop-shadow-sm mb-10">
         Featured Products
       </h1>
