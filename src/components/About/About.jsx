@@ -37,7 +37,7 @@ const About = () => {
               <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-md shadow-md transition-all">Learn More About Us</button>
             </a>
           </div>
-          <div className="relative bg-white rounded-lg overflow-hidden h-80 md:h-96 flex items-center justify-center">
+          <div className="relative rounded-lg overflow-hidden h-80 md:h-96 flex items-center justify-center ">
             <ImageSlider />
           </div>
         </div>
