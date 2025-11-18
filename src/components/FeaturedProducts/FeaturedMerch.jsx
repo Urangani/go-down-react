@@ -1,34 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import productImg from "../../assets/images/output.png"
-import image2 from "../../assets/images/products/silentHerb.png";
+import productImg from "../../assets/images/merch/black-shirt.png"
+import image2 from "../../assets/images/merch/green-shirt.png";
+import image3 from "../../assets/images/merch/cap-cooler.png";
 
-function Slider() {
+function FeaturedProducts() {
   const products = [
     {
-      name: "Go Down Herb",
+      name: "Black Herbal Shirt",
       image: productImg,
       description:
-       " By leveraging traditional knowledge and modern production techniques, we deliver high-quality, effective, and affordable herbal health products",
+       " The black herbal shirt is crafted from premium cotton fabric, offering a soft and comfortable fit. Its vibrant blue color is complemented by intricate herbal-themed designs, making it a stylish choice for casual wear.",
       price: 150,
     },
     {
-      name: "SilentHerb",
+      name: "Green Shirt",
       image: image2,
       description:
-        "This bottle design features a harmonious blend of natural elements, showcasing a serene landscape that evokes tranquility and eco-friendliness.",
+        "The green shirt is made from high-quality, breathable fabric, ensuring comfort and durability while showcasing a vibrant green color that stands out.",
+      price: 250,
+    },
+    {
+      name: "Cap and Cooler",
+      image: image3,
+      description:
+        "The cap and cooler set features a sleek design with the brand's logo prominently displayed, combining functionality with style for outdoor enthusiasts.",
       price: 250,
     },
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[70%] bg-linear-to-b from-green-300 from-10% to-white py-10">
+    <div className="flex flex-col items-center justify-center min-h-[70%] bg-linear-to-b from-white to-green-300/50 py-10">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-green-700 tracking-tight text-center drop-shadow-sm mb-10">
-        Featured Products
+        Featured Merchandise
       </h1>
 
       {/* Horizontal Scroll Slider */}
-      <div className="w-full max-w-4xl overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-none bg-[url(../../assets/images/bg/bg-2.jpg)] bg-contain bg-no-repeat bg-center mix-blend-multiply rounded-lg px-4">
+      <div className="w-full max-w-4xl overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-none bg-[url(../../assets/images/bg/bg-3.jpg)] bg-cover bg-no-repeat mix-blend-multiply rounded-lg px-4">
         <div className="flex">
           {products.map((product, i) => (
             <div
@@ -36,7 +44,7 @@ function Slider() {
               className="w-full shrink-0 snap-start flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 p-5 min-w-full"
             >
               {/* Image Card */}
-              <div className="w-72 h-80 md:w-80 md:h-96 lg:w-96 lg:h-[500px] rounded-lg bg-[url(../../assets/images/bg/bg-4.jpg)] bg-cover bg-no-repeat bg-center shadow-lg shadow-green-200 flex items-center justify-center">
+              <div className="w-72 h-80 md:w-80 md:h-96 lg:w-96 lg:h-[500px] rounded-lg bg-[url(../../assets/images/bg/bg-5.jpg)] bg-cover bg-no-repeat bg-center shadow-lg shadow-green-200 flex items-center justify-center">
                 <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
               </div>
               {/* Description Card */}
@@ -60,4 +68,4 @@ function Slider() {
   );
 }
 
-export default Slider;
+export default FeaturedProducts;

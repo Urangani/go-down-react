@@ -17,7 +17,7 @@ const Cart = () => {
         <p className="text-gray-600">Your cart is empty. <Link to="/shop" className="text-green-600 hover:underline">Shop now</Link></p>
       ) : (
         <>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {cart.map(item => (
               <div key={item.id} className="bg-white rounded-lg shadow-md overflow-hidden">
                 <img src={item.image} alt={item.name} className="w-full h-48 object-cover" />

@@ -128,7 +128,7 @@ const Shop = () => {
           ))}
         </select>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
         {filteredProducts.map(product => (
           <div key={product.id} onClick={() => handleProductClick(product)} className="cursor-pointer hover:scale-105 transition-transform duration-200">
             <ProductCard product={product} />

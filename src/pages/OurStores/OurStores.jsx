@@ -106,7 +106,7 @@ const OurStores = () => {
         onCityChange={handleCityChange}
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
         <div>
           <h2 className="text-xl font-semibold text-gray-900 mb-4">Store Locations</h2>
           <StoreList stores={filteredStores} onStoreClick={handleStoreClick} />

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Hero = () => {
   const heroRef = useRef(null);
 
@@ -11,8 +12,8 @@ const Hero = () => {
 
   return (
     <section className="relative bg-linear-to-b from-white via-green-400 to-white text-white overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1200')" }}></div>
+      <div className="absolute inset-0 opacity-70">
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url(../../assets/images/bg/bg-5.jpg)]"></div>
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center fade-in-up" ref={heroRef}>
         <div className="inline-flex items-center gap-2 bg-amber-800 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
