@@ -25,7 +25,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="bg-linear-to-b from-gray-300 via-green-100 to-green-300 py-15 px-6 md:px-12 lg:px-24">
+    <section className="bg-linear-to-b from-gray-300 via-green-100 to-green-400 py-15 px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto">
         {/* Who We Are Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">

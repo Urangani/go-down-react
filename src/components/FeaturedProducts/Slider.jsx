@@ -22,13 +22,13 @@ function Slider() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[70%] bg-linear-to-b from-green-300 from-10% to-white py-10">
+    <div className="flex flex-col items-center justify-center min-h-[70%] bg-linear-to-b from-green-400 from-0% to-white to-20%  py-10">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-green-700 tracking-tight text-center drop-shadow-sm mb-10">
         Featured Products
       </h1>
 
       {/* Horizontal Scroll Slider */}
-      <div className="w-full max-w-4xl overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-none bg-[url(../../assets/images/bg/bg-2.jpg)] bg-contain bg-no-repeat bg-center mix-blend-multiply rounded-lg px-4">
+      <div className="w-full max-w-4xl overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-none bg-[url(../../assets/images/bg/bg-2.jpg)] bg-cover bg-no-repeat bg-center mix-blend-multiply rounded-lg px-4">
         <div className="flex">
           {products.map((product, i) => (
             <div

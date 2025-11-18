@@ -133,6 +133,7 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   display: none;
+  z-index: 100000;
 }
 
 .wa__popup_heading {
@@ -199,7 +200,8 @@ body {
 }
 
 .wa__btn_popup:hover + .wa__popup_chat_box,
-.wa__popup_chat_box:hover {
+.wa__popup_chat_box:hover,
+.wa__popup_chat_box:not(.hidden) {
   display: block;
 }
 
@@ -215,5 +217,8 @@ body {
   .wa__popup_chat_box {
     width: 260px;
     bottom: 70px;
+  }
+  .wa__btn_popup_txt {
+    display: none;
   }
 }
