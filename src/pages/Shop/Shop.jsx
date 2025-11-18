@@ -112,7 +112,8 @@ const Shop = () => {
   };
 
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main className="bg-gradient-to-b from-gray-200 via-green-200 to-white py-20 px-6 md:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto">
       <h1 className="text-3xl font-bold text-gray-900 mb-8">Shop Our Products</h1>
       <div className="mb-8">
         <label htmlFor="category" className="block text-sm font-medium text-gray-700 mb-2">Filter by Category</label>
@@ -137,6 +138,7 @@ const Shop = () => {
       {selectedProduct && (
         <ProductPreview product={selectedProduct} onClose={closePreview} />
       )}
+      </div>
     </main>
   );
 };

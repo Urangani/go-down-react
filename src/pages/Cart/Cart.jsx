@@ -10,7 +10,8 @@ const Cart = () => {
   };
 
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main className="bg-gradient-to-b from-gray-200 via-green-200 to-white py-20 px-6 md:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto">
       <h1 className="text-3xl font-bold text-gray-900 mb-8">Your Cart</h1>
       {cart.length === 0 ? (
         <p className="text-gray-600">Your cart is empty. <Link to="/shop" className="text-green-600 hover:underline">Shop now</Link></p>
@@ -78,6 +79,7 @@ const Cart = () => {
           </div>
         </>
       )}
+      </div>
     </main>
   );
 };

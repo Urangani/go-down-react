@@ -93,7 +93,8 @@ const OurStores = () => {
   };
 
   return (
-    <main className="m-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+    <main className="bg-gradient-to-b from-gray-200 via-green-200 to-white py-20 px-6 md:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto">
       <h1 className="text-3xl font-bold text-gray-900 mb-8">Our Stores</h1>
       <p className="text-lg text-gray-700 mb-8">
         Find our products at various locations across South Africa. We are committed to making our herbal health solutions accessible to everyone.
@@ -114,6 +115,7 @@ const OurStores = () => {
           <h2 className="text-xl font-semibold text-gray-900 mb-4">Map View</h2>
           <StoreMap stores={filteredStores} center={mapCenter} zoom={mapZoom} />
         </div>
+      </div>
       </div>
     </main>
   );

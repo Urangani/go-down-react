@@ -23,7 +23,7 @@ function Slider() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-radial from-green-100 from-10% to-white py-10">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-amber-950 tracking-tight text-center drop-shadow-sm mb-10">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-green-700 tracking-tight text-center drop-shadow-sm mb-10">
         Featured Products
       </h1>
 
@@ -40,14 +40,14 @@ function Slider() {
                 <img src={product.image} alt={product.name} className="w-full h-full object-cover rounded-lg" />
               </div>
               {/* Description Card */}
-              <div className="w-80 md:w-96 text-center text-amber-900 font-semibold">
+              <div className="w-80 md:w-96 p-4 text-center text-green-700 font-semibold  rounded-2xl bg-[linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.04))] backdrop-blur-sm border border-white/20 shadow-lg">
                 <h2 className="text-3xl md:text-4xl mb-4">{product.name}</h2>
                 <p className="text-lg md:text-xl mb-4">{product.description}</p>
-                <p className="text-3xl md:text-4xl font-bold text-green-800 mb-4">
+                <p className="text-3xl md:text-4xl font-bold text-green-700 mb-4">
                   R{product.price}
                 </p>
                 <Link to="/shop">
-                  <button className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition text-lg">
+                  <button className="px-6 py-3 bg-amber-900 text-white rounded-lg hover:bg-green-600 transition text-lg">
                     Buy Now
                   </button>
                 </Link>

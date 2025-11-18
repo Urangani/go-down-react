@@ -2,7 +2,8 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main className="bg-gradient-to-b from-gray-200 via-green-200 to-white py-20 px-6 md:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto">
       <h1 className="text-3xl font-bold text-gray-900 mb-8">Contact Us</h1>
       <div className="grid md:grid-cols-2 gap-8">
         <div>
@@ -41,6 +42,7 @@ const Contact = () => {
             <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">Send Message</button>
           </form>
         </div>
+      </div>
       </div>
     </main>
   );
