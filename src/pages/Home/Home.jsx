@@ -3,7 +3,7 @@ import Hero from '../../components/Hero/Hero';
 import About from '../../components/About/About';
 import WhyChooseUs from '../../components/WhyChooseUs/WhyChooseUs';
 import WhatsAppWidget from '../../components/WhatsAppWidget/WhatsAppWidget';
-import Slider from '../../components/FeaturedProducts/Slider';
+import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts';
 import FeaturedMerch from '../../components/FeaturedProducts/FeaturedMerch';
 import OurStoresPreview from '../../components/OurStores/OurStoresPreview';
 
@@ -12,7 +12,7 @@ const Home = () => {
     <div>
       <Hero />
       <About />
-      <Slider/>
+      <FeaturedProducts/>
       <FeaturedMerch/>
       <WhyChooseUs />
       <OurStoresPreview />

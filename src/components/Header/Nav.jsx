@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
   return (
     <nav className="hidden lg:flex items-center gap-8">
-      <Link to="/home" className="text-sm font-medium transition-colors relative group text-gray-700 hover:text-green-600">
+      <Link to="/home" className="text-sm font-medium transition-colors relative group text-gray-700 hover:text-green-600 hover:scale-[150%] hover:duration-300">
         Home
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all group-hover:w-full"></span>
       </Link>

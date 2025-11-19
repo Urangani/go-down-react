@@ -9,9 +9,9 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="product-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+    <div className="product-card rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 bg-[linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.04))] backdrop-blur-sm border border-white/20 shadow-lg">
       <div className="h-48 bg-gray-200 flex items-center justify-center">
-        <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+        <img src={product.image} alt={product.name} className="w-full h-full object-contain" />
       </div>
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-900 mb-2">{product.name}</h3>

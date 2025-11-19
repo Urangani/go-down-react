@@ -32,7 +32,7 @@ const OurStoresPreview = () => {
   };
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 bg-linear-to-b from-gray-200 via-green-100 to-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Stores</h2>
@@ -70,7 +70,7 @@ const OurStoresPreview = () => {
         <div className="text-center">
           <Link
             to="/our-stores"
-            className="inline-block bg-green-600 text-white px-6 py-3 rounded-md font-medium hover:bg-green-700 transition-colors"
+            className="inline-blockpx-4 py-2 md:px-6 md:py-3 bg-amber-900 text-white rounded-lg hover:bg-green-600 transition text-base md:text-lg"
           >
             View All Stores & Interactive Map
           </Link>

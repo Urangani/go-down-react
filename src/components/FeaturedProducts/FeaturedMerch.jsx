@@ -30,8 +30,8 @@ function FeaturedProducts() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[70%] bg-linear-to-b from-white to-green-300/50 py-10">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-green-700 tracking-tight text-center drop-shadow-sm mb-10">
+    <div className="flex flex-col items-center justify-center min-h-[70%] bg-linear-to-b from-white to-green-300 py-10">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
         Featured Merchandise
       </h1>
 

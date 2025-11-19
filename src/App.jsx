@@ -26,6 +26,7 @@ function App() {
   return (
     <CartProvider>
       <Router>
+        
         <div className="App">
           <Header />
 

@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import ProductCard from '../../components/FeaturedProducts/ProductCard';
 import ProductPreview from './ProductPreview';
+import goDownImage from '../../assets/images/godown.jpg';
+import drink from '../../assets/images/silentHerb.jpg';
+import image3 from '../../assets/images/mpesu.jpg';
+
 
 const Shop = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -11,7 +15,7 @@ const Shop = () => {
       id: 1,
       name: 'Go Down Herb (Ndaa)',
       price: 'R150',
-      image: '/assets/images/drinks.jpeg',
+      image: goDownImage,
       description: 'Premium herbal mixture drink for wellness.',
       category: 'Beverages',
       quantity: 50
@@ -20,7 +24,7 @@ const Shop = () => {
       id: 2,
       name: 'Silent Herb (Ndaa)',
       price: 'R250',
-      image: '/assets/images/silentHerb.jpg',
+      image: drink,
       description: 'Effective herbal beverage for health.',
       category: 'Beverages',
       quantity: 30
@@ -29,7 +33,7 @@ const Shop = () => {
       id: 3,
       name: 'Herbal Tea Blend',
       price: 'R100',
-      image: '/assets/images/waters.jpg',
+      image: image3,
       description: 'Natural tea blend for daily wellness.',
       category: 'Beverages',
       quantity: 40

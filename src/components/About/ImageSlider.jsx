@@ -41,13 +41,8 @@ const ImageSlider = () => {
       id="aboutImage"
       src={images[currentIndex]}
       alt="Herbal products"
-className="
-  w-[400px] h-[600px] mt-20 border-green-300 rounded-lg
-  bg-[url(../../assets/images/bg/bg-2.jpg)]
-  bg-cover bg-no-repeat bg-center shadow-lg shadow-green-200
-  mix-blend-multiply
-  [clip-path:polygon(24%_35%,15%_15%,38%_0,71%_0,90%_14%,91%_48%,100%_76%,90%_92%,85%_100%,43%_100%,6%_93%,0_62%)]
-"
+className="w-full h-full object-cover rounded-lg shadow-lg transition-opacity duration-1000"
+
 style={{ opacity }}
     />
   );

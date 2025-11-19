@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="bg-linear-to-b from-green-300/50 py-20 px-6 md:px-12 lg:px-24">
+    <section className="bg-linear-to-b from-green-300 via-gray-200 to-gray-200 py-20 px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Why Choose Go Down Herbs?</h2>
